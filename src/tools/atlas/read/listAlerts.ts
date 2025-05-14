@@ -39,7 +39,10 @@ export class ListAlertsTool extends AtlasToolBase {
                 .join("\n");
 
         return {
-            content: [{ type: "text", text: output }],
+            content: [
+                { type: "text", text: output },
+                { type: "text", text: "For more information" },
+            ],
         };
     }
 }
